@@ -1,4 +1,12 @@
-# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+os: linux
 
-language: R
-cache: packages
+language: r
+
+deploy:
+  provider: script
+  script R -q -e 'sum(2+2)'
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
