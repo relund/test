@@ -7,6 +7,6 @@
 #' scrape()
 scrape <- function() {
   dat <- tibble::as_tibble(cars)
-  readr::write_csv2(dat, "./data/data.csv", append = T)
+  readr::write_csv2(dat, "dataset.csv", append = T)
   invisible(NULL)
 }
