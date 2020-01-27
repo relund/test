@@ -2,4 +2,5 @@ language: r
 cache: packages
 latex: false
 warnings_are_errors: false
-r_binary_packages: readr, tibble
+r_binary_packages: readr 
+  tibble
