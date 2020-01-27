@@ -4,7 +4,7 @@ language: r
 
 deploy:
   provider: script
-  script R -q -e 'sum(2+2)'
+  script R -q -e 'sum(2+2+2)'
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
