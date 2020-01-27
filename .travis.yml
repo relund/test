@@ -1,6 +1,5 @@
-os: linux
-
 language: r
+cache: packages
 
 deploy:
   provider: script
