@@ -2,8 +2,8 @@ language: r
 cache: packages
 latex: false
 warnings_are_errors: false
-#deploy:
-#  provider: script
+deploy:
+  provider: script
 #  script R -q -e 'sum(2+2+2)'
   #skip_cleanup: true
   #github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
